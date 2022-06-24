@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*-----BODY----*/
+.fonde{
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-areas:" header"
+                        " main  "
+                        "footer ";
+    background-image: url(../img/randomfondo.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat:initial;
+    background-size: 100%;
+    background-size: cover;
+}
+/*----NAV----*/
+.navbar{
+    grid-area: navbar;
+    width: 100%;
+    height: 80%;
+    position: fixed;
+    top: 0%;
+    z-index: 10;
+}
+
+.navbar ul{
+    text-align-last: right;
+}
+.navbar ul li{
+    position: relative;
+    display: inline-block;
+    padding: 15px;
+    margin-top: 15px;
+    font-size: 20px;
+    font-family: Bebas Neue;
+}
+
+.navbar ul li a{
+    color:aliceblue;
+    list-style: none;
+    text-decoration-line: none;
+}
+
+.navbar ul li a:hover{
+    color:black;
+    transition: 0.3s;
+}
+
+
+/*----HEADER----*/
+.logo{
+    margin: 15px;
+    padding: 15px;
+    max-width: 100px;
+    max-height: 100px;
+}
+/*----MAIN----*/
+.frase{
+    grid-area: main;
+    margin: 85px;
+    padding: 45px;
+    font-family: Bebas Neue;
+    color: aliceblue;
+    font-size: 100px;
+}
+/*---FOOTER---*/
+
+footer{
+    grid-area: footer;
+    width: 100%;
+    font-family: Bebas Neue;
+    color: aliceblue;
+}
+
+.img{
+    margin-left: 15px;
+    padding: 15px;
+    text-align: center;
+}
+
+.pie{
+    width: 100%;
+    text-align: center;
+}
+
+
+/*------------------QUEM SOU----------------------------------------------------*/
+
+.fondoPessoal{
+    background-image: url(../img/fondeGui.jpeg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat:initial;
+    background-size: 100%;
+    background-size: cover;
+}
+/*---NAV---*/
+
+/*----HEADER----*/
+.logo{
+    margin: 15px;
+    padding: 15px;
+    max-width: 100px;
+    max-height: 100px;
+}
+/*----MAIN----*/
+.fraseQuemSou{
+    margin: 85px;
+    padding: 30px;
+    font-family: Bebas Neue;
+    color: aliceblue;
+    font-size: 45px;
+}
+p{
+    margin: 90px;
+    padding: 45;
+    font-family: Bebas Neue;
+    color: aliceblue;
+    font-size: 30px;
+}
+/*----FOOTER----*/
+
+
+
+/*---------------------------------------------------GALERIA------------------------*/
+
+.fondoGal{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 65px auto 80px;
+    grid-template-areas: " header header header "
+                        " main    main   main   "
+                        " footer  footer footer ";
+    background-image: url(../img/randomfondo.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat:initial;
+    background-size: 100%;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 4em;
+    min-height: 100vh;
+}
+/*----NAV----*/
+
+/*----HEADER----*/
+.header{
+    grid-area: header;
+}
+.logo{
+    margin: 15px;
+    padding: 15px;
+    max-width: 100px;
+    max-height: 100px;
+}
+/*----MAIN----*/
+.main{
+    grid-area: main;
+}
+.fraseGal{
+    margin: 85px;
+    padding: 30px;
+    font-family: Bebas Neue;
+    color: aliceblue;
+    font-size: 45px;
+}
+.divG{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 35px;
+    row-gap: 25px;
+}
+
+img{
+    max-width: 450px;
+    max-height: 350px;
+}
+
+
+
+/*----FOOTER----*/
+
+
+/*-----------------BLOG-----------------------------------------*/
+
+.fondoBlog{
+    background-image: url(../img/randomfondo.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat:initial;
+    background-size: 100%;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 4em;
+    min-height: 100vh;
+}
+
+/*----NAV----*/
+
+
+/*----HEADER----*/
+
+.logo{
+    margin: 15px;
+    padding: 15px;
+    max-width: 100px;
+    max-height: 100px;
+}
+.titu{
+    font-family: Bebas Neue;
+    color: aliceblue;
+    margin: 30px;
+    font-size: 65px;
+}
+
+/*----MAIN----*/
+
+.fotosParrafos{
+    font-family: Bebas Neue;
+    color: aliceblue;
+}
+
+.card{
+    display: flex;
+    justify-content: space-around;
+
+}
+.card img{
+    margin: 25px;
+}
+.cardText{
+    font-size: 15px;
+}
+.cardTitu{
+    margin: 25px;
+}
+
+/*----FOOTER----*/
+
+
+/*--------------------------------------CONTACTO-----------------------*/
+
+.fondoContact{
+    background-image: url(../img/randomfondo.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat:initial;
+    background-size: 100%;
+    background-size: cover;
+}
+
+/*-----NAV----*/
+
+
+/*------HEADER-----*/
+.logo{
+    margin: 15px;
+    padding: 15px;
+    max-width: 100px;
+    max-height: 100px;
+}
+.titu{
+    font-family: Bebas Neue;
+    color: aliceblue;
+    margin: 10px;
+    font-size: 45px;
+    text-align: center;
+}
+
+/*----MAIN----*/
+
+.formRegister{
+    width: 400px;
+    padding: 20px;
+    margin: 45px;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.controls{
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: none;
+    font-family: Bebas Neue;
+
+
+}
+
+.botons{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    margin: 16px 0;
+    font-family: Bebas Neue;
+    font-size: 15px;
+}
+
+
+
+@media(max-width:768px){
+    .logo{
+        width: 100px;}
+    .navbar{
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .navbar ul li{
+        padding: 20px;
+        margin-top: 15px;
+        font-size: 15px;
+    }
+
+    .fonde{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50px auto 50px;
+        grid-template-areas: " header"
+                            " main  "
+                            "footer ";    
+    }
+
+    .divG{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    img{
+        max-width: 250px;
+        max-height: 200px;
+    }
+    .frase{
+        font-size: 50px;
+    }
+    .fraseQuemSou{
+        margin: 50px;
+        padding: 15px;
+        font-size: 20px;
+    }
+    p{
+        margin: 35px;
+        padding: 20px;
+        font-size: 15px;
+    }
+
+    .cardText{
+        font-size: 10px;
+    }
+
+}
+@media(max-width: 450px){
+    .logo{
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    .logo img{
+        width: 64px; 
+    }
+    .navbar{
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+    }
+    .navbar ul li{
+        padding: 20px;
+        margin-top: 15px;
+        font-size: 12px;
+    }
+    .fondeGal{   
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50px auto 50px;
+        grid-template-areas: " header "
+                            " main   "
+                            " footer ";
+    }
+    
+    .fraseGal{
+        width: 100%;
+        font-size: 50px;
+        margin: 20px;
+    }
+
+    .divG{
+        grid-template-columns: 1fr 1fr ;
+    }
+
+    img{
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+.formRegister{
+    width: 400px;
+    padding: 20px;
+    margin: 25px;
+    }
+
+    .titu{
+        margin: 10px;
+        font-size: 25px;
+    
+    }
+
+}
